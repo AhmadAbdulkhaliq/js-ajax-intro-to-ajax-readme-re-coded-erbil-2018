@@ -13,7 +13,7 @@ function getCommits(el)
 }
 function showCommits() {
   const commits = JSON.parse(this.responseText)
-  const commitsList = `<ul>${commits.map(commit => '<li><strong>' + commit.author.repos + '</strong> - ' + commit.commit.message + '</li>').join('')}</ul>`
+  const commitsList = `<ul>${commits.map(commit => '<li><strong>' + commit.author + '</strong> - ' + commit.commit.message + '</li>').join('')}</ul>`
   document.getElementById("commits").innerHTML = commitsList
 }
 function getRepos()
