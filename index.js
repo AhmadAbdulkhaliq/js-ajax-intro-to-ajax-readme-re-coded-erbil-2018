@@ -21,6 +21,6 @@ function getRepos()
 {
   let request = new XMLHttpRequest();
   request.addEventListener("load",showRepos);
-  request.open("GET",'https://api.github.com/users/A7madXatab/repos');
+  request.open("GET",'https://api.github.com/users/AhmadAbdulkhaliq/repos');
   request.send();
 }
