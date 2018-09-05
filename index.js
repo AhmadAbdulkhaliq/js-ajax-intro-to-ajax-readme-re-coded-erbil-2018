@@ -9,7 +9,7 @@ function getCommits(el)
   let name = el.dataset.repo;
   let request = new XMLHttpRequest();
   request.addEventListener("load",showCommits)
-  request.open("GET",'https://api.github.com/repos/A7madXatab/' + name + '/commits');
+  request.open("GET",'https://api.github.com/repos/AhmadAbdulkhaliq/' + name + '/commits');
   request.send();
 }
 function showCommits() {
